@@ -14,20 +14,20 @@ public static int loopBinarySearch(int[] arr, int value)
       mid = (start + end)/2;
         if(value == arr[mid])
         {
-       //    System.out.println(mid);
+       
            return mid;
            
         }
         else if(value < arr[mid])
         {
            end = mid-1;
-      //     System.out.println("end");
+     
 
         }
         else if(value > arr[mid])
         {
            start = mid + 1;
-       //    System.out.println("start");
+       
 
         }
      
