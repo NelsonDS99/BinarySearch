@@ -38,13 +38,14 @@ public static int loopBinarySearch(int[] arr, int value)
 public static int recursiveBinarySearch(int [] arr, int start, int end, int value)
 {
    int mid = 0;
-   if (start > end)
-   {
-      mid = -1;
+  
       
-   }
   mid = (start + end)/2;
-      if(value == arr[mid])
+  if(start > end)
+  {
+     mid=-1;
+  }
+     else if(value == arr[mid])
       {
          return mid;
       }
@@ -56,7 +57,7 @@ public static int recursiveBinarySearch(int [] arr, int start, int end, int valu
       {
          return recursiveBinarySearch(arr, mid+1, end,value); 
       }
-   
+     
    return mid;
 }
 public static void main(String args[])
