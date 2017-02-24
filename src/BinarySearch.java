@@ -5,7 +5,7 @@ public class BinarySearch
 public static int loopBinarySearch(int[] arr, int value)
 {
   int start = 0;
-  int end = arr.length;
+  int end = arr.length-1;
   int mid = 0;
   
   while (start <= end)
